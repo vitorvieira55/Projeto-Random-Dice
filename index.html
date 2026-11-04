@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSorteio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="cabecalho">
+      <div class="dado" aria-hidden="true">🎲</div>
+      <h1>DevSorteio</h1>
+    </header>
+
+    <form class="formulario" id="formulario-sorteio">
+      <p class="rotulo">Sortear um número</p>
+
+      <div class="campos">
+        <label class="campo">
+          <span class="texto-acessivel">Número inicial</span>
+          <input id="numero-inicial" type="number" step="1" placeholder="entre" required>
+        </label>
+        <label class="campo">
+          <span class="texto-acessivel">Número final</span>
+          <input id="numero-final" type="number" step="1" placeholder="e" required>
+        </label>
+      </div>
+
+      <button type="submit">Sortear</button>
+      <p class="resultado" id="resultado" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
